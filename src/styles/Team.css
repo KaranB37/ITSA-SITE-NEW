@@ -1,0 +1,10 @@
+.team-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('C:\Users\gf63\Desktop\Do something\ITSA-SITE\itsa\src\assets\bgab1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  

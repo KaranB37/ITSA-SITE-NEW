@@ -1,0 +1,120 @@
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('C:\Users\gf63\Desktop\Do something\ITSA-SITE\itsa\src\assets\bg1234.png'); /* Replace 'your-image-url.jpg' with the actual image URL */
+    background-size: cover; /* This ensures the background image covers the entire element */
+    background-position: center; /* Center the background image */
+    height: 80vh; /* Set the height to 70% of the viewport height (vh) */
+}
+.flex h1{
+    font-size: 50px;
+    color:rgb(red, green, blue);
+    padding: 10px;
+    margin: 0px;
+    height: auto;
+    width: auto;
+}
+.text{
+    color:white;
+font-weight: 400;
+font-size: 30px;
+}
+.button1 {
+    border-radius: 5px;
+    bottom: 15vh;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 40px;
+    padding: 10px 100px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: hsla(0,0%,100%,.2);
+    border: 1px solid hsla(0,0%,100%,.3);
+    box-shadow: 0 4px 30px rgba(0,0,0,.1);
+    color: #fff;
+    z-index: 0;
+    transition: background 0.3s ease;
+}
+.button1:hover {
+  background: hsla(0,0%,100%,.4);
+}
+
+/* color:#0077a0; */
+
+.flex2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url('C:\Users\gf63\Desktop\Do something\ITSA-SITE\itsa\src\assets\bg1234.png'); /* Replace 'your-image-url.jpg' with the actual image URL */
+    background-size: cover; /* This ensures the background image covers the entire element */
+    background-position: center; /* Center the background image */
+    height: 80vh; /* Set the height to 70% of the viewport height (vh) */
+}
+.card {
+    position: relative;
+    top: -10vh;
+    height: 700px;
+    width: 420px;
+    border-radius: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: #fff;
+    transition: background 0.3s ease;
+    transition: transform 0.4s; 
+    overflow: hidden;
+  }
+  
+  .card-img {
+    max-width: 100%; /* Ensure the image does not exceed the width of the card */
+    max-height: 100%; /* Ensure the image does not exceed the height of the card */
+    object-fit: cover; /* Resize the image to cover the card while maintaining its aspect ratio */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); 
+  }
+
+  .card-body{
+    padding: 15px;
+  }
+  
+  .card-title{
+    font-size: 30px;
+    margin: auto;
+    color: white;
+  }
+  .card-text{
+    color:#454545;
+    font-size: 20px;
+  }
+
+  p{
+    padding: 0 15px 0px 15px;
+    height: 14vh;
+  }
+  @media (max-width:720px) {
+
+    .text{
+  font-size: 28px;
+  }
+  .flex h1{
+    font-size: 36px;
+    font-weight: bolder;
+  }
+
+
+  .button1 {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 15px 50px;
+}
+}

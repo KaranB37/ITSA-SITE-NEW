@@ -1,0 +1,187 @@
+/* Root variables for gradient colors */
+:root {
+  --color-start: #a4508b;
+  --color-end: #5f0a87;
+}
+.custom-section .left span{
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.boldText {
+  font-weight: bold !important;
+}
+
+
+/* Main navbar styling */
+.navbar {
+  position: relative;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, var(--color-start), var(--color-end));
+  overflow: hidden;
+}
+
+/* Pseudo-element for extra gradient layer with animation */
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, transparent, rgba(255, 255, 255, 0.2), transparent 70%);
+  animation: rotate 15s linear infinite;
+  z-index: -1;
+}
+
+/* Pseudo-element for bottom shine effect */
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+  z-index: -1;
+}
+
+/* Keyframes for rotating radial gradient */
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    opacity: 0;
+    animation: fadeInNav 0.5s ease 0.5s forwards;
+    font-family: 'Nunito', sans-serif; 
+  }
+  @keyframes fadeInNav {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .custom-section {
+    position: relative;
+    padding: 5vh 27vh;
+    background-color: #f8f8f8; 
+    z-index: 1; 
+    
+  }
+
+  .left {
+    color:  black;
+
+  }
+
+a {
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color:  
+    #a4508b;
+
+  }
+  
+  .special-char{
+    font-weight: bolder;
+  }
+
+
+.hamburger{
+  display: none;
+}
+
+
+/* Apply animation to slide in from left */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.nav-links.open {
+  animation: slideIn 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 2;
+  width: 150px;
+  height: 100vh;
+  padding: 10px;
+}
+/* Apply animation to slide out to left */
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.nav-links .close {
+  animation: slideOut 0.3s ease-in-out;
+} 
+
+.nav-links a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+@media (max-width:1097px){
+  .special-char2{
+    display: none;
+  }
+}
+@media (max-width:980px){
+    .custom-section {
+      padding: 3vh 8vh;
+    }
+ 
+
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      font-size: 24px;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+
+  
+}
