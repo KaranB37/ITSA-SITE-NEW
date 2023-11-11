@@ -3,6 +3,8 @@ import "../styles/Events.css";
 import peer from "../assets/peer-2-peer.png";
 import iv from "../assets/adani-iv.png";
 import Techire from "../assets/Techire.png";
+import Techventure from "../assets/Techventure.png";
+import Techday from "../assets/Teachers-day.png";
 
 const Events = () => {
   return (
@@ -19,7 +21,9 @@ const Events = () => {
             The visit offered a unique opportunity for students to gain insights
             into the operations of a thermal power station and learn about
             sustainable energy practices.A deeper understanding of thermal power
-            generation and the complexities involved.
+            generation and the complexities involved. The opportunity to
+            interact with industry professionals and gain insights into career
+            opportunities in the energy sector.
           </p>
         </div>
       </div>
@@ -58,6 +62,25 @@ const Events = () => {
             within the realm of technology. With four rounds of challenges
             designed to test participants' technical skills and problem-solving
             abilities.
+          </p>
+        </div>
+      </div>
+      <div className="event-container">
+        <div className="event-image">
+          <img src={Techday} alt="Event Image" />
+        </div>
+        <div className="event-content">
+          <h2>Teacher’s Day</h2>
+          <p className="event-date">September 5, 2023</p>
+          <p className="event-description">
+            <br />
+            The event aimed to celebrate the dedication and hard work of our
+            teaching staff while allowing students to experience the joy of
+            teaching. The highlight of our Teachers' Day event was the "Teacher
+            for a Day" initiative.Several SE and TE students had the opportunity
+            to step into the shoes of teachers and conduct mini-lessons for
+            their peers allowing students to appreciate the challenges and
+            responsibilities that come with teaching.
           </p>
         </div>
       </div>
