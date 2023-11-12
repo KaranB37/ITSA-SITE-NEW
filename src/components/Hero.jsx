@@ -1,8 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Typed from "typed.js";
 import "../styles/Hero.css";
-import itsa from "../assets/img/itsa5.png";
-import csi from "../assets/img/csi_logo.jpg";
 
 const Hero = () => {
   const textElement = useRef(null);

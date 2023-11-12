@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Events.css";
 import peer from "../assets/peer-2-peer.png";
 import iv from "../assets/adani-iv.png";

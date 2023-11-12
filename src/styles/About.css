@@ -1,0 +1,83 @@
+.bg-1{
+    margin: auto;
+    height:90vh;
+    width: 100%;
+    background-image:url('C:\Users\gf63\Desktop\Do something\ITSA-SITE\itsa\src\assets\bg732.jpg');
+    background-size: cover;
+      background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+}
+
+
+.about-container-1 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-image-about {
+    background-size: cover; 
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .center-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .content-container-about {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin-top: -50px;
+    text-align: center;
+  }
+  
+  .title-about {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .description-about {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+
+  .button12{
+    color: #fff;
+  }
+  @media screen and (max-width: 768px) {
+
+
+   .content-container-about{
+    height: 30vh;
+   }
+  }
+
+  @media screen and (max-width: 690px) {
+
+
+    .content-container-about{
+     height: 40vh;
+    }
+   }
+
+   @media screen and (max-width: 690px) {
+
+
+    .content-container-about{
+     height: 50vh;
+    }
+   }
+

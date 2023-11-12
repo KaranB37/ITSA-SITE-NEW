@@ -8,12 +8,22 @@
     width: auto;
     height: auto;
   }
-  
+  .event-bg{
+    padding-top: 50px;
+    padding-bottom: 50px;
+     background-image:url('C:\Users\gf63\Desktop\Do something\ITSA-SITE\itsa\src\assets\bg732.jpg');
+    background-size: cover;
+      background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+  }
   .event-content {
+    background: rgba(0, 0, 0, 0.7);
     flex: 1;
     padding: 20px;
   }
   .event-description{
+    
     padding-top: 50px;
   }
   .event-image img {
@@ -22,11 +32,13 @@
     border-radius: 0%;
   }
   .event-content p{
+    color:azure;
     padding: 0px;
     height: 0vh;
   }
-
-
+  .event-content h2{
+    color:azure;
+  }
   @media (max-width:980px){
     .event-container{
       flex-direction: column-reverse;
