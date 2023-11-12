@@ -1,10 +1,104 @@
-.team-container {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    background-image: url('C:\Users\gf63\Desktop\Do something\ITSA-SITE\itsa\src\assets\bgab1.jpg');
-    background-size: cover;
+.bg-12{
+  margin: auto;
+height: auto;
+  width: 100%;
+  background-image:url('C:\Users\gf63\Desktop\Do something\ITSA-SITE\itsa\src\assets\bg732.jpg');
+  background-size: cover;
     background-position: center;
+background-repeat: no-repeat;
+backdrop-filter: blur(5px);
+z-index:0;
+padding-bottom: 30px;
+}
+
+.column-container{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.member{
+  background: rgba(0, 0, 0, 0.6);
+  height:50vh;
+  width: auto;
+  border-radius: 3%;
+  border: 5px solid rgb(200, 0, 255); 
+
+}
+
+.name12 {
+  color:blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0px;
+}
+.designation{
+  color:bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: auto;
+  padding-top: 3vh;
+}
+.photo12 img {
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;/* Initial border color */
+}
+
+
+.button124 {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  padding: 10px 100px;
+  font-size: 56px;
+  cursor: pointer;
+  color:blanchedalmond;
+  border-radius: 5px;
+  pointer-events: none;
+  cursor: default;
+}
+
+@media only screen and (max-width: 1204px) {
+
+  .member{
+    height:35vh;
   }
-  
+  .column-container{
+    flex-direction: column;
+  }
+
+  .column-container{
+
+    gap: 30px;
+
+  }
+
+}
+
+
+@media only screen and (max-width: 1500px) {
+  .member{
+    height:35vh;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+    
+  .button124 {
+    font-size: 36px;
+    
+  padding: 5px 50px;
+  }
+}

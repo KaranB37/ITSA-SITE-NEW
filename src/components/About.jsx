@@ -18,7 +18,7 @@ const About = () => {
               ever-evolving world of technology.
             </p>
           </div>
-          <div className="button1">
+          <div className="button123">
             <Link to="/Vission_Mission" className="button12">
               Vission and Mission
             </Link>

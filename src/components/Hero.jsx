@@ -35,7 +35,7 @@ const Hero = () => {
         <p>
           <span ref={textElement} className="text"></span>
         </p>
-        <button className="button1">Know more</button>
+        <button className="button1234">Know more</button>
       </div>
     </>
   );
