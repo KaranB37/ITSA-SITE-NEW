@@ -2,7 +2,7 @@
     margin: auto;
     height:90vh;
     width: 100%;
-    background-image:url('C:\Users\gf63\Desktop\Do something\ITSA-SITE\itsa\src\assets\bg732.jpg');
+    background-image:url('../assets/bg732.jpg');
     background-size: cover;
       background-position: center;
   background-repeat: no-repeat;
