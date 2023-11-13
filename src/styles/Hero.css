@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url('C:\Users\gf63\Desktop\Do something\ITSA-SITE\itsa\src\assets\bg1234.png'); /* Replace 'your-image-url.jpg' with the actual image URL */
+    background-image: url('../assets/bg1234.png'); /* Replace 'your-image-url.jpg' with the actual image URL */
     background-size: cover; /* This ensures the background image covers the entire element */
     background-position: center; /* Center the background image */
     height: 80vh; /* Set the height to 70% of the viewport height (vh) */

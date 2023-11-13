@@ -11,7 +11,7 @@
   .event-bg{
     padding-top: 50px;
     padding-bottom: 50px;
-     background-image:url('C:\Users\gf63\Desktop\Do something\ITSA-SITE\itsa\src\assets\bg732.jpg');
+     background-image:url('../assets/bg732.jpg');
     background-size: cover;
       background-position: center;
   background-repeat: no-repeat;
