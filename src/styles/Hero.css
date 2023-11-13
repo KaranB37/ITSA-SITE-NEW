@@ -14,8 +14,21 @@
     color:rgb(red, green, blue);
     padding: 10px;
     margin: 0px;
+    opacity: 0;
     height: auto;
     width: auto;
+    animation: slideInNav 1s ease 1s forwards;
+}
+
+@keyframes slideInNav {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .text{
     color:white;
@@ -37,9 +50,23 @@ font-size: 30px;
     color: #fff;
     z-index: 0;
     transition: background 0.3s ease;
+    transform: translateX(100%); /* Initial position off-screen to the right */
+  animation: slideInNavRight 1s ease 1s forwards;
+  opacity: 0;
 }
 .button1234:hover {
   background: hsla(0,0%,100%,.4);
+}
+
+@keyframes slideInNavRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /* color:#0077a0; */
@@ -122,6 +149,8 @@ font-size: 30px;
     padding: 15px 50px;
 }
 }
+
+
 
 @media (max-width:343px) {
   .flex h1{

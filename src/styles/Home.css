@@ -112,15 +112,6 @@ a {
 }
 
 
-/* Apply animation to slide in from left */
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 
 .nav-links.open {
   animation: slideIn 0.3s ease-in-out;
@@ -135,6 +126,11 @@ a {
   height: 100vh;
   padding: 10px;
 }
+
+.nav-links .close {
+  animation: slideOut 0.3s ease-in-out;
+} 
+
 /* Apply animation to slide out to left */
 @keyframes slideOut {
   from {
@@ -145,9 +141,15 @@ a {
   }
 }
 
-.nav-links .close {
-  animation: slideOut 0.3s ease-in-out;
-} 
+/* Apply animation to slide in from left */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 
 .nav-links a {
   padding: 15px;

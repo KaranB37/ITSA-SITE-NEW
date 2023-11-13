@@ -7,6 +7,10 @@ import "../styles/Home.css";
 const Home = () => {
   const [menuOpen, setMenuOpen] = useState("close");
 
+  const closeMenu = () => {
+    setMenuOpen("close");
+  };
+
   const toggleMenu = () => {
     setMenuOpen(menuOpen === "open" ? "close" : "open");
   };
@@ -22,14 +26,23 @@ const Home = () => {
           <div
             className={`nav-links ${menuOpen === "open" ? "open" : "close"}`}
           >
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/team">Team</Link>
-            <Link to="/events">Events</Link>
+            <Link to="/" onClick={closeMenu}>
+              Home
+            </Link>
+            <Link to="/about" onClick={closeMenu}>
+              About
+            </Link>
+            <Link to="/team" onClick={closeMenu}>
+              Team
+            </Link>
+            <Link to="/events" onClick={closeMenu}>
+              Events
+            </Link>
             <ScrollLink
               to="contact"
               smooth={true}
               duration={500}
+              onClick={closeMenu}
               style={{ cursor: "pointer", textDecoration: "none" }}
             >
               Contact
